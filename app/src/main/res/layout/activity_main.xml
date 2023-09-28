@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
 
     <TextView
         android:id="@+id/contadorPulsaciones"
-        android:layout_width="156dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
-        android:text="Contador:"
-        android:textAppareance="android:attr/textAppareanceLarge" />
+        android:text="Contador:" />
 
     <Button
         android:id="@+id/resetea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Resetear"
         android:onClick="reseteaContador"
-        />
+        android:text="Resetear" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/incrementa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/resetea"
-        android:text="Incrementar"
         android:onClick="incrementaContador"
-        />
+        android:text="Incrementar" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/decrementa"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/resetea"
-        android:text="Decrementa"
         android:onClick="restaContador"
-        />
-</RelativeLayout>
+        android:text="Decrementa" />
+</LinearLayout>

@@ -14,7 +14,6 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.contador.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
